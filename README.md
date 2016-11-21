@@ -16,7 +16,7 @@ You can see the code here: https://cecile-b.github.io/AlgoliaSearch/
 
 ## Previous Versions 
 
-I previously built the prototype with Algolia's InstantSearch.js library:  cecile-b.github.io/Algolia_Prototype
+I previously built the prototype with Algolia's InstantSearch.js library:  https://cecile-b.github.io/Algolia_Prototype
 
 ## API Reference
 
