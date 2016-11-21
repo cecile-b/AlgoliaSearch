@@ -1,10 +1,10 @@
 $(document).ready(function() {
   'use strict';
 
+
   // INITIALIZATION
   // ==============
 
-  // Replace with your own values
   var APPLICATION_ID = 'DEP8RKIYGG';
   var SEARCH_ONLY_API_KEY = '4ef9a3c08a893b021ff9bfc4dcda8c2c';
   var INDEX_NAME = 'instant_search';
@@ -17,7 +17,7 @@ $(document).ready(function() {
   };
   var FACETS_SLIDER = ['price'];
   var FACETS_ORDER_OF_DISPLAY = ['food_type'];
-  var FACETS_LABELS = {food_type: 'Category'};
+  var FACETS_LABELS = {food_type: 'Cuisine Type'};
 
   // Client + Helper initialization
   var algolia = algoliasearch(APPLICATION_ID, SEARCH_ONLY_API_KEY);
@@ -39,7 +39,6 @@ $(document).ready(function() {
   var facetTemplate = Hogan.compile($('#facet-template').text());
   var paginationTemplate = Hogan.compile($('#pagination-template').text());
   var noResultsTemplate = Hogan.compile($('#no-results-template').text());
-
 
 
   // SEARCH BINDING
@@ -77,7 +76,6 @@ $(document).ready(function() {
   // Initial search
   initFromURLParams();
   algoliaHelper.search();
-
 
 
   // RENDER SEARCH COMPONENTS
@@ -194,7 +192,6 @@ $(document).ready(function() {
   }
 
 
-
   // NO RESULTS
   // ==========
 
@@ -242,7 +239,6 @@ $(document).ready(function() {
   }
 
 
-
   // EVENTS BINDING
   // ==============
 
@@ -272,7 +268,6 @@ $(document).ready(function() {
     $searchInput.val('').focus();
     algoliaHelper.setQuery('').clearRefinements().search();
   });
-
 
 
   // URL MANAGEMENT
@@ -316,13 +311,11 @@ $(document).ready(function() {
   });
 
 
-
   // HELPER METHODS
   // ==============
 
   function toggleIconEmptyInput(query) {
     $searchInputIcon.toggleClass('empty', query.trim() !== '');
   }
-
 
 });

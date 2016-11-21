@@ -8,10 +8,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.ion.rangeslider/2.0.12/css/ion.rangeSlider.skinFlat.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- /CSS -->
-    
   </head>
-
-
 
   <!-- Header -->
   <header>
@@ -24,30 +21,19 @@
   </header>
   <!-- /Header -->
 
-
   <!-- Main -->
-<main>
-  <div id="right-column">
-    <div id="facets"></div>
-  </div>
+  <main>
+    <div id="right-column">
+      <div id="facets"></div>
+    </div>
 
-  <div id="left-column">
-    <div id="stats"></div>
-    <div id="hits"></div>
-    <div id="pagination"></div>
-  </div>
-</main>
+    <div id="left-column">
+      <div id="stats"></div>
+      <div id="hits"></div>
+      <div id="pagination"></div>
+    </div>
+  </main>
   <!-- /Main -->
-
-
-  <!-- Footer -->
-<!--   <footer>
-    Source Code on <a href="http://github.com/algolia/instant-search-demo">Github</a> -
-    Powered by <a href="http://algolia.com">Algolia</a> - Data from <a href="https://developer.bestbuy.com">Best Buy</a>
-  </footer> -->
-  <!-- /Footer -->
-
-
 
   <!-- Hit template -->
   <script type="text/template" id="hit-template">
@@ -70,7 +56,6 @@
   <script type="text/template" id="stats-template">
     {{ nbHits }} Result{{#nbHits_plural}}s{{/nbHits_plural}} <span class="found-in">Found in {{ processingTimeMS }}ms</span>
   </script>
-
 
   <!-- Facet template -->
   <script type="text/template" id="facet-template">
@@ -95,8 +80,6 @@
       <input type="text" id="{{ facet }}-slider" data-min="{{ min }}" data-max="{{ max }}" data-from="{{ from }}" data-to="{{ to }}"/>
     </div>
   </script>
-
-  
 
   <!-- Pagination template -->
   <script type="text/template" id="pagination-template">
@@ -124,8 +107,6 @@
       </ul>
     </div>
   </script>
-
-
 
   <!-- Javascript -->
 
