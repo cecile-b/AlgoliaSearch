@@ -14,6 +14,10 @@ This is part of an interview with Algolia.
 
 You can see the code here: https://cecile-b.github.io/AlgoliaSearch/
 
+## Previous Versions 
+
+I previously built the prototype with Algolia's InstantSearch.js library:  cecile-b.github.io/Algolia_Prototype
+
 ## API Reference
 
 I followed the JS Helper, documentation here: https://github.com/algolia/algoliasearch-helper-js
