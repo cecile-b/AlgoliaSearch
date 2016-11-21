@@ -406,11 +406,11 @@ footer a:hover {
 /* RESPONSIVE DESIGN FOR SMALL/MOBILE SCREENS */
 @media screen and (min-width : 400px) and (max-width : 700px) {
   #search-input {
-  margin-left:120px;
+  margin-left:200px;
   }
 
   #search-input input {
-    width:230px;
+    width:150px;
   }
 
   #left-column {
